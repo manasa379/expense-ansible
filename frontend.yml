@@ -9,7 +9,7 @@
 
     - name: Placing Expense Config file in Nginx
       ansible.builtin.copy:
-        src: expense.config
+        src: expense.conf
         dest: /etc/nginx/default.d/expense.conf
 
     - name: Removing Old Nginx Content
