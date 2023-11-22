@@ -10,7 +10,7 @@
     - name: Copy Backend Service File
       ansible.builtin.copy:
         src: backend.service
-        dest: /etc/systemed/system/backend.service
+        dest: /etc/systemd/system/backend.service
     - name: Add application user
       ansible.builtin.user:
       name: expense
