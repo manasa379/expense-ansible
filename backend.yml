@@ -13,7 +13,7 @@
         dest: /etc/systemd/system/backend.service
     - name: Add application user
       ansible.builtin.user:
-      name: expense
+        name: expense
     - name: Cleanup old content
       ansible.builtin.file:
         path: /app
