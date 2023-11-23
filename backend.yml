@@ -24,7 +24,7 @@
         state: directory
     - name: Download backend Code and Extract it
       ansible.builtin.unarchive:
-        src: https://expense.artifacts.s3.amazonaws.com/bakend.zip
+        src: https://expense-artifacts.s3.amazonaws.com/bakend.zip
         dest: /app
         remote_src: yes
     - name: Install NodeJS dependencies
