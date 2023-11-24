@@ -12,7 +12,7 @@
 
     - name: Install MySQL Server
       ansible.builtin.dnf:
-        name:  mysql-community-server
+        name:  mysql server
         state: present
 
     - name: Start MYSQL
