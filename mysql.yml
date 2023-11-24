@@ -11,9 +11,9 @@
       ansible.builtin.shell: dnf module disable mysql -y
 
     - name: Install MySQL Server
-      ansible.builtin.dnf:
-        name:  mysql-server
-        state: present
+      ansible.builtin.yum:
+        name:  mysql-community-server
+        state: latest
 
     - name: Start MYSQL
       ansible.builtin.systemd:
