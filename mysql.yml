@@ -10,10 +10,10 @@
     - name: Disable MySQL 8 version
       ansible.builtin.shell: dnf module disable mysql -y
 
-
-
-
-
+    - name: Install MySQL Server >= 5.7
+      ansible.builtin.dnf:
+        name: Install mysql-community-server>=5.7
+        state: present
 
     - name: Start MYSQL
       ansible.builtin.systemd:
