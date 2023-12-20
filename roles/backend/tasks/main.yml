@@ -10,6 +10,10 @@
 - name: Add application user
   ansible.builtin.user:
     name: expense
+- name: Include App Pre-requisites
+  ansible.builtin.import_role:
+    name: common
+    tasks-from: app_prereq
 - name: Cleanup old content
   ansible.builtin.file:
     path: /app
