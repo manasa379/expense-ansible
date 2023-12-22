@@ -4,7 +4,7 @@
   ansible.builtin.dnf:
     name: nodejs
 - name: Copy Backend Service File
-  ansible.builtin.copy:
+  ansible.builtin.template:
     src: backend.service
     dest: /etc/systemd/system/backend.service
 - name: Add application user
