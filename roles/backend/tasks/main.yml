@@ -2,7 +2,7 @@
   ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 - name: Install NodeJS
   ansible.builtin.dnf:
-    name: nodejs
+
 - name: Copy Backend Service File
   ansible.builtin.template:
     src: backend.service
